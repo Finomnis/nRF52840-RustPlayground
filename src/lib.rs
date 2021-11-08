@@ -3,8 +3,9 @@
 use core::sync::atomic::{AtomicUsize, Ordering};
 
 use defmt_rtt as _; // global logger
+
 // TODO(5) adjust HAL import
-use nrf52840_hal as _; // memory layout
+pub use nrf52840_hal as hal; // memory layout
 
 use panic_probe as _;
 
