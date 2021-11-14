@@ -1,0 +1,29 @@
+[package]
+name = "usb-cdc-bench"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# General
+anyhow = "1.0"
+lazy_static = "1.4"
+
+# Logging
+env_logger = "0.9"
+log = "0.4"
+
+# Tokio
+tokio = { version = "1", features = ["full"] }
+tokio-util = "0.6"
+
+# Shutdown
+tokio-graceful-shutdown = "0.1"
+
+# Command line arguments
+# TODO replace with proper 3.0 version once released
+clap = "3.0.0-beta.5"
+
+# Serial port
+tokio-serial = "5.4.1"
